@@ -1,11 +1,5 @@
 # GRC102 Week 4 Practical Lab: Linux Security Monitoring and Auditing
 
-**Course:** GRC102, Information Security Governance
-**Institution:** International Cybersecurity and Digital Forensics Academy (ICDFA)
-**Student:** Mercy Ajayi
-**Registration number:** C11/26/CGRCE/17219
-**Lab:** Week 4 Practical Laboratory (Lab 4)
-**Date of submission:** 8 October 2026
 
 ---
 
@@ -158,9 +152,6 @@ I did not check how many of the pending updates are security updates, so the rep
 - Some causes (the sslh crashes and the screen-lock errors) were not confirmed.
 - No SIEM was available, so the monitoring mapping was not tested.
 
-## Declaration of AI assistance
-
-I carried out all lab activities myself in my own Kali VM, and the commands, output and screenshots in the report come from that work. I used an AI assistant (Claude) to explain commands, help me troubleshoot errors, and help structure and word the report, as the class representative confirmed was allowed provided the errors and fixes were documented. I reviewed the technical claims against my own evidence, and I can explain every command, finding and recommendation.
 
 ## Author
 
