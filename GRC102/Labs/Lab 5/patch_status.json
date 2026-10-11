@@ -1,0 +1,7 @@
+{
+  "struts_patched": true,
+  "mysql_secured": true,
+  "network_segmented": true,
+  "patched_date": "2026-10-10",
+  "notes": "Struts: web container replaced with patched tomcat:9-jre11 image (vulnerable Struts Showcase app removed entirely). MySQL: root and app credentials rotated to randomly generated 24-character passwords, verified old default password rejected. Network: database moved to dedicated secgov_db_network, confirmed unreachable from web_server via DNS and direct connection test."
+}

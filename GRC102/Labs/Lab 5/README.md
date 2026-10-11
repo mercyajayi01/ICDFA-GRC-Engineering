@@ -14,6 +14,20 @@ The full write-up, with all screenshots, is in the PDF report. This README is a 
 |---|---|
 | `README.md` | This documentation file |
 | `GRC102_W5_LAB_MERCY_AJAYI_C11_26_CGRCE_17219.pdf` | The full lab report with screenshots and saved terminal output |
+| `docker-compose.yml`, `database_init/init.sql` | The simulated environment (web, database, monitoring containers) |
+| `vulnerability_scanner.py` | Scans for the three intended weaknesses |
+| `governance_tracker.py`, `initialize_governance.py` | The governance register (policies, controls, risks, incidents, metrics, audits) |
+| `simulate_attack.py` | Safely demonstrates exploitation (proof-of-vulnerability header only, no real code execution) |
+| `analyze_governance_failures.py` | Cross-references scan, attack, and governance data to identify failures |
+| `monitor_containers.py` | Real-time detection of failed logins and attack patterns |
+| `generate_charts.py`, `generate_dashboard.py` | Builds the charts and the executive dashboard |
+| `executive_dashboard.html` | Self-contained dashboard (open directly in a browser) |
+| `equifax_comparison.md`, `part2_lessons_learned.md`, `part3_controls_report.md` | Write-ups for Parts 2 and 3 |
+| `metrics_framework.md`, `dashboard_user_guide.md`, `board_report.md` | Write-ups for Part 4 |
+| `patch_status.json`, `governance_data.json`, `attack_log.json`, `monitoring_alerts.log` | Evidence/state files the scripts read and write |
+| `vulnerability_report_20261010_050227.json`, `governance_failure_report_20261010_050526.json` | Final ("after") scan and failure analysis results |
+
+**Note:** the baseline ("before") `vulnerability_report_*.json` and `governance_failure_report_*.json` files were overwritten during the lab session and are not included here. The baseline results (Critical/High/Medium findings, 8 governance failures) are fully documented with screenshots in the PDF report.
 
 ## Environment and authorisation
 
