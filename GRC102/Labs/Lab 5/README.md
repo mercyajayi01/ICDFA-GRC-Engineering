@@ -13,7 +13,7 @@ The full write-up, with all screenshots, is in the PDF report. This README is a 
 | File | What it is |
 |---|---|
 | `README.md` | This documentation file |
-| `GRC102_W5_LAB_MERCY_AJAYI_C11_26_CGRCE_17219.pdf` | The full lab report with screenshots and saved terminal output |
+The full lab report with screenshots and saved terminal output |
 
 ## Environment and authorisation
 
