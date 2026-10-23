@@ -13,7 +13,7 @@ The full write-up, with all figures, is in the PDF report. This README is a shor
 | File or folder | What it is |
 |---|---|
 | `README.md` | This documentation file |
-| `GRC103_W1_LAB_MERCY_AJAYI_C11_26_CGRCE_17219.pdf` | The full lab report: introduction, executive summary, method, scan results, 21-row risk assessment table and limitations |
+| PDF report | The full lab report: introduction, executive summary, method, scan results, 21-row risk assessment table and limitations|
 | `Scan_Outputs/` | The original scan files, unedited: `ping_result.txt`, `initial_scan.nmap`, `initial_scan.gnmap`, `initial_scan.xml`, `initial_scan_report.html`, `nikto_scan.txt`, `nuclei_web_scan.txt`, `nuclei_full_scan.txt` |
 | `Screenshots/` | 25 screenshots: lab setup, ping, Nmap, the Nmap HTML report, Nikto, both Nuclei scans and the manual checks |
 | `Command_Log/commands_run.txt` | The commands I ran, in order |
