@@ -1,0 +1,34 @@
+GRC103 Lab 1 - commands run, in order
+Run from the Kali Linux terminal unless stated. Target: 192.168.56.101 (Metasploitable 2).
+Working folder: ~/lab1_evidence
+
+# Metasploitable terminal (one command)
+ifconfig
+
+# Kali: setup check and evidence folder
+ip a
+mkdir -p ~/lab1_evidence
+cd ~/lab1_evidence
+
+# Phase 1: discovery and enumeration
+ping -c 4 192.168.56.101 | tee ping_result.txt
+sudo nmap -sV -sC -O -p- -oA initial_scan 192.168.56.101
+xsltproc -o initial_scan_report.html /usr/share/nmap/nmap.xsl initial_scan.xml
+firefox initial_scan_report.html &
+
+# Phase 2: vulnerability identification
+nikto -h http://192.168.56.101 -o nikto_scan.txt
+mv nikto_scan.txt.txt nikto_scan.txt          # Nikto added a second .txt extension
+firefox http://192.168.56.101 &
+nuclei -version
+nuclei -update-templates
+nuclei -u http://192.168.56.101 -o nuclei_web_scan.txt
+nuclei -target 192.168.56.101 -o nuclei_full_scan.txt
+
+# Manual checks (no passwords tried, nothing exploited)
+ftp 192.168.56.101          # logged in as anonymous, then: quit
+telnet 192.168.56.101       # read the banner; no password entered
+# Browser: /phpinfo.php, /phpMyAdmin/ (login page only), /test/
+
+# Copy evidence to the shared folder
+cp -v ~/lab1_evidence/* /media/sf_GRC102_W4_Evidence/Lab1_Vuln_Assessment/
